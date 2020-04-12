@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Google</title>
  <style>
+  
 .navbar{
 	position:fixed;
-	right:10px;
+	right:1%;
 	font-size:20px;
 }
 .navbar a{
@@ -14,12 +16,13 @@
 	margin-right:30px;
 	}
 	.main{
-	position:relative;
-	top:500px;
+  width:100%;
+	position:absolute;
+	top:10%;
 	text-align:center;
 	}
 	.main input[type="search"] {
-	width:800px;
+	width:80%;
 	height:40px;
 	margin:40px;
 	border-radius:50px;
@@ -40,8 +43,29 @@
 	position:absolute;
 	bottom:-20px;
 	}
+  @media only screen and (max-width:600px){
+   .main img[name="search"]{
+    width: 25%;
+   } .main img[name="logo"]{
+    width: 100%;
+    
+   }
+   .sec{
+    position: relative;
+    right:10px;
+     top: 10px;
+   }
+  }
+  .main img[name="search"]{
+   width:10%;
+    height:60px;
+   position: absolute;
+   left: 80%;
+   top:180px;
+  }
 	.foot{
-	display:flex;}
+	display:flex;
+  }
 	.footer a{
 	text-decoration:none;
 	color:black;
@@ -51,17 +75,21 @@
 	.sec{
 	position:absolute;
 	right:10px;}
+  
+ 
 </style>
     
 </head>
 <body>
 <div class="navbar">
-<a href="gmail.com">Gmail </a><a href=" ">image</a><a href=" "><img style="position:relative; top:10px;"src="atgoogle.png"  alt="Logo" /></a><input  type="button" value="Sign in" style="background:blue; color:white"></input>
-</div>
-<center><div class="main"><img src="googlelogo.png"/><p />
+<a href="gmail.com">Gmail </a> <a href=" ">image</a> <a href=" "><img style="position:relative; top:10px;" src="atgoogle.png"  alt="Logo" /></a><input  type="button" value="Sign in" style="background:blue; color:white" />
+ </div>
+<center><div class="main"><img name="logo" src="googlelogo.png"/><p />
 <input  type="search"/>
-<img src="searchlogo.png" style="position:absolute;top:185px; left:745px;" height="59px" />
-<input type="button" value="Google Search"/>
+<img  name="search" src="searchlogo.png"  />
+<br>
+ <input type="button" value="Google Search"/>
+ 
 <input type="button" value="I am feeling lucky"/>
 <p>Google offered in: <a href=" ">Hausa</a> <a href=" ">Igbo</a> <a href=" ">Édè Yorûbä</a> <a href=" ">Nigerian Pigin</a>
 
